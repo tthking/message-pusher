@@ -50,6 +50,7 @@ jobs:
         if: startsWith(github.repository, 'imccn/backup_server')
         with:
           context: .
+          file: ./Dockerfile 
           platforms: linux/amd64,linux/arm64   # Docker准备构建的镜像平台
           push: true
           tags: imccn/message-pusher:latest   # Docker镜像标签
