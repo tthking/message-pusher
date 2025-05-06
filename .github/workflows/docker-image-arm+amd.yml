@@ -20,9 +20,8 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v3
 
-      # - name: Save version info
-      #   run: |
-      #     run: echo "v0.4.12" > VERSION
+      - name: Save version info
+        run: echo "v0.4.13" > VERSION
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
